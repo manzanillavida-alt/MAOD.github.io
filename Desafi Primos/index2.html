@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de Códigos de Acceso Primos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header-site">
+        <h1>Matemáticas que resuelven problemas: Números Primos en códigos de acceso</h1>
+        <p class="autor"><strong>Estudiante:</strong> Mateo Adrián Ormachea Dávila</p>
+    </header>
+
+    <main class="content-container">
+
+        <section class="info-card">
+            <h2>Contexto del Problema Real</h2>
+            <p>En el entorno de la seguridad informática y el control de accesos, el uso de números primos cumple un rol
+                vital en la generación de claves y cifrados robustos. Esta herramienta simula un filtro de validación
+                donde un usuario introduce un código numérico para un token de seguridad; el sistema determina si el
+                código es un número primo para catalogarlo como un "Código de Acceso Altamente Seguro".</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Explicación del Algoritmo</h2>
+            <p>Un número primo es aquel que únicamente posee dos divisores exactos en el conjunto de los números
+                enteros: el número 1 y sí mismo. El script captura el valor numérico del formulario e implementa un
+                ciclo que va desde 1 hasta dicho número, verificando el residuo de la división elemental empleando el
+                operador módulo (%). Si el contador final registra exactamente dos divisores, el código pasa la prueba
+                de seguridad.</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Módulo de Verificación de Seguridad</h2>
+            <form id="formSeguridad" onsubmit="event.preventDefault();">
+                <div class="form-control">
+                    <label for="codigo">Ingrese el código numérico a evaluar:</label>
+                    <input type="number" id="codigo" min="1" placeholder="Ej. 17" required>
+                </div>
+                <button type="button" id="btnVerificar">Verificar Nivel de Seguridad</button>
+            </form>
+        </section>
+
+        <section class="info-card result-card">
+            <h2>Estado del Código de Acceso</h2>
+            <div id="resultado">
+                <p class="placeholder-text">Los resultados del análisis criptográfico aparecerán aquí.</p>
+            </div>
+        </section>
+
+        <section class="info-card">
+            <h2>Conclusión</h2>
+            <p>Los números primos componen los cimientos de la criptografía moderna. Su uso práctico nos demuestra que
+                la imposibilidad de descomponer de forma simple estos números permite desarrollar claves asimétricas de
+                alta complejidad matemática, convirtiendo vulnerabilidades de software en sistemas de protección
+                fuertemente protegidos ante ataques de fuerza bruta.</p>
+        </section>
+
+    </main>
+
+    <footer class="footer-site">
+        <p>Enlaces del proyecto:</p>
+        <div class="links-box">
+            <a href="https://github.com/tu-usuario/repositorio-primos" target="_blank">💻 Repositorio Git</a>
+            <a href="https://tu-usuario.github.io/repositorio-primos/" target="_blank">🌐 Página Publicada</a>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>

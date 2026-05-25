@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Ahorro con Fibonacci</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header class="header-site">
+        <h1>Matemáticas que resuelven problemas: Fibonacci en la vida real</h1>
+        <p class="autor"><strong>Estudiante:</strong> Mateo Adrián Ormachea Dávila</p>
+    </header>
+
+    <main class="content-container">
+
+        <section class="info-card">
+            <h2>Contexto del Problema Real</h2>
+            <p>Una persona desea ahorrar dinero durante varios meses. En lugar de ahorrar una cantidad fija,
+                lo que suele volverse monótono o insostenible, decide usar la serie de Fibonacci para aumentar su ahorro
+                poco a poco. Esto permite empezar con montos muy pequeños y cómodos (Bs. 1) y desarrollar la
+                disciplina antes de enfrentarse a depósitos más grandes.</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Explicación del Algoritmo</h2>
+            <p>La serie de Fibonacci es un patrón matemático donde cada número se obtiene sumando los dos anteriores (0,
+                1, 1, 2, 3, 5, 8...). Para este programa evaluamos la secuencia mes a mes sin utilizar
+                vectores o arrays, optimizando la memoria mediante el uso de tres variables simples (a, b y c) que van
+                rotando sus valores en cada iteración del ciclo.</p>
+        </section>
+
+        <section class="info-card">
+            <h2>Configura tu Plan de Ahorro</h2>
+            <form id="formAhorro" onsubmit="event.preventDefault();">
+                <div class="form-control">
+                    <label for="meses">Cantidad de meses a simular:</label>
+                    <input type="number" id="meses" min="1" max="40" placeholder="Ej. 6" required>
+                </div>
+                <button type="button" id="btnCalcular">Calcular Ahorro Total</button>
+            </form>
+        </section>
+
+        <section class="info-card result-card">
+            <h2>Proyección del Plan de Ahorro</h2>
+            <div id="resultado">
+                <p class="placeholder-text">Los resultados se mostrarán aquí una vez ejecutes el formulario.</p>
+            </div>
+        </section>
+
+        <section class="info-card">
+            <h2>Conclusión</h2>
+            <p>La matemática aplicada a través de la sucesión de Fibonacci ofrece una estrategia psicológica y
+                financiera efectiva. Transforma el ahorro en un juego de progresión geométrica predecible,
+                demostrando que la constancia y los patrones lógicos estructuran de mejor manera el alcance de metas
+                financieras personales.</p>
+        </section>
+
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
